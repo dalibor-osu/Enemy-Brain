@@ -52,7 +52,10 @@
   </Target>
   -->
   <ItemGroup>
-    <Compile Include="E.cs" />
+    <Compile Include="Backgrounds.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="WhiteBG.cs" />
+    <Compile Include="scriptslibrary/StoryboardObjectGeneratorExtended.cs" />
   </ItemGroup>
   <ItemGroup />
 </Project>
