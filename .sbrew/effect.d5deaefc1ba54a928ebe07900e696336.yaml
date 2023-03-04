@@ -1,0 +1,41 @@
+﻿FormatVersion: 7
+Name: "Logo 1"
+Script: "Logo"
+Multithreaded: No
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "56178"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  EndTime:
+    Type: "System.Int32"
+    Value: "77109"
+    DisplayName: "End Time"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb/logo.png"
+    DisplayName: "Sprite Path"
+    BeginsGroup: "Other"
+  Color:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0,0,0,1"
+  SpriteScale:
+    Type: "OpenTK.Vector2"
+    Value: "1,1"
+    DisplayName: "Sprite Scale"
+  MinimalScale:
+    Type: "System.Single"
+    Value: "0.5"
+    DisplayName: "Minimal Scale"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random Seed"
+    BeginsGroup: "Common"
+Layers:
+  29802e0f30d04ad3800e2e8b544b6ff6:
+    Name: "Logo"
+    OsbLayer: Background
+    DiffSpecific: No
+    Visible: Yes

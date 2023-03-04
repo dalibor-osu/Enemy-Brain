@@ -53,7 +53,10 @@
   -->
   <ItemGroup>
     <Compile Include="Backgrounds.cs" />
+    <Compile Include="BlackWhite.cs" />
     <Compile Include="Frame.cs" />
+    <Compile Include="Logo.cs" />
+    <Compile Include="Spectrum.cs" />
     <Compile Include="WhiteBG.cs" />
     <Compile Include="scriptslibrary/StoryboardObjectGeneratorExtended.cs" />
   </ItemGroup>
