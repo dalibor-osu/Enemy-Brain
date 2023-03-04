@@ -54,10 +54,13 @@
   <ItemGroup>
     <Compile Include="Backgrounds.cs" />
     <Compile Include="BlackWhite.cs" />
+    <Compile Include="EBLogo1.cs" />
+    <Compile Include="FFTFog.cs" />
     <Compile Include="Frame.cs" />
-    <Compile Include="Logo.cs" />
+    <Compile Include="FTTLogo.cs" />
     <Compile Include="Spectrum.cs" />
     <Compile Include="WhiteBG.cs" />
+    <Compile Include="scriptslibrary/Logo.cs" />
     <Compile Include="scriptslibrary/StoryboardObjectGeneratorExtended.cs" />
   </ItemGroup>
   <ItemGroup />
