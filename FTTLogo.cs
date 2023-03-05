@@ -24,6 +24,11 @@ namespace StorybrewScripts
             logo.MoveY(OsbEasing.InOutSine, 0, GetBeatDuration(Beatmap, StartTime) * 8, 250, 230);
             logo.MoveY(OsbEasing.InOutSine, GetBeatDuration(Beatmap, StartTime) * 8, GetBeatDuration(Beatmap, StartTime) * 16, 230, 250);
             logo.EndGroup();
+
+            logo.Color(394331, 401950, logo.ColorAt(394331), Color4.RoyalBlue);
+
+            logo.Fade(287664, 288616, 0, 1);
+            logo.Fade(400997, 402902, 1, 0);
         }
     }
 }
