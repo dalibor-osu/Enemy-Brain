@@ -19,7 +19,6 @@ namespace StorybrewScripts
         {
             var layer = GetLayer("Backgrounds");
 		    List<OsbSprite> sprites = new List<OsbSprite>();
-            int startTime = 365;
 
             for (int i = 1; i <= 9; i++)
             {
