@@ -27,6 +27,7 @@ namespace StorybrewScripts
 
             logo.Fade(StartTime, EndTime - beatDuration * 3, 1, 1);
             logo.Scale(OsbEasing.OutBack, StartTime, StartTime + GetBeatDuration(Beatmap, StartTime), 0, ScreenScale * scale);
+            logo.RandomMovement(StartTime, EndTime, beatDuration * 4, new Vector2(10, 10), ScreenMiddle, OsbEasing.InOutSine);
 
             DnBBeat(logo, 57574, 75713, new []{64551, 65946});
 
@@ -71,6 +72,7 @@ namespace StorybrewScripts
             ghost.Color(StartTime, Color);
             ghost.Scale(StartTime, StartTime + beatDuration, ScreenScale * scale * hardScale, ScreenScale * scale * hardScale * 1.2);
             ghost.Fade(StartTime, StartTime + beatDuration * 0.75, 0.3, 0);
+            ghost.Move(StartTime, sprite.PositionAt(StartTime));
         }
     }
 }

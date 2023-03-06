@@ -60,6 +60,7 @@
     <Compile Include="FFTFog.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="FTTLogo.cs" />
+    <Compile Include="Intro.cs" />
     <Compile Include="Names.cs" />
     <Compile Include="Particles.cs" />
     <Compile Include="Spectrum.cs" />
