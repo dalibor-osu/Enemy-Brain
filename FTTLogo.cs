@@ -16,8 +16,6 @@ namespace StorybrewScripts
     {
         public override void Generate()
         {
-            StartTime = 287664;
-            EndTime = 379093;
 		    base.Generate();
             
             logo.StartLoopGroup(287664, 15);

@@ -56,9 +56,12 @@
     <Compile Include="BlackWhite.cs" />
     <Compile Include="EBLogo1.cs" />
     <Compile Include="EBLyrics1.cs" />
+    <Compile Include="EBSpecialLyrics.cs" />
     <Compile Include="FFTFog.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="FTTLogo.cs" />
+    <Compile Include="Names.cs" />
+    <Compile Include="Particles.cs" />
     <Compile Include="Spectrum.cs" />
     <Compile Include="WhiteBG.cs" />
     <Compile Include="scriptslibrary/EBLyrics.cs" />

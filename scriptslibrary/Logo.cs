@@ -15,18 +15,21 @@ namespace StorybrewScripts
 {
     public abstract class Logo : StoryboardObjectGeneratorExtended
     {
+        [Group("Timing")]
+        [Configurable] public int StartTime = 0;
+        [Configurable] public int EndTime = 0;
+
         [Group("Other")]
         [Configurable] public string SpritePath = "sb/logo.png";
         [Configurable] public Color4 Color = Color4.White;
 
         protected float scale = 0.3f;
-        protected int StartTime = 0;
-        protected int EndTime = 0;
         protected OsbSprite logo;
+        protected StoryboardLayer layer;
 
         public override void Generate()
         {
-            var layer = GetLayer("Logo");
+            layer = GetLayer("Logo");
             logo = layer.CreateSprite(SpritePath);
             logo.Color(StartTime, Color);
             logo.Scale(StartTime, ScreenScale * scale);

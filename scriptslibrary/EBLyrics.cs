@@ -20,10 +20,10 @@ namespace StorybrewScripts
         [Configurable] public string Song = "Enemy Brain";
         [Configurable] public Color4 Color = Color4.Black;
 
-        protected float scale = 0.25f;
+        protected float scale = 0.3f;
         protected List<Line> lines = new List<Line>();
         protected StoryboardLayer layer;
-        protected float offset = 10f;
+        protected float offset = 11f;
 
         public override void Generate()
         {
@@ -54,6 +54,6 @@ namespace StorybrewScripts
         }
 
         protected float GetInitialX(int letterCount, float offset) =>
-            320 - ((int)(letterCount / 2)) * offset + (letterCount == 0 ? offset * 0.5f : 0);
+            320 - ((int)(letterCount / 2)) * offset + (letterCount % 2 == 0 ? offset * 0.5f : 0);
     }
 }

@@ -3,6 +3,15 @@ Name: "EBLogo1 1"
 Script: "EBLogo1"
 Multithreaded: No
 Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "56178"
+    DisplayName: "Start Time"
+    BeginsGroup: "Timing"
+  EndTime:
+    Type: "System.Int32"
+    Value: "78504"
+    DisplayName: "End Time"
   SpritePath:
     Type: "System.String"
     Value: "sb/logo.png"
@@ -10,7 +19,7 @@ Config:
     BeginsGroup: "Other"
   Color:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.8672875,0.313576,0.2061883,1"
+    Value: "0.9615483,0.3274478,0.1421224,1"
   RandomSeed:
     Type: "System.Int32"
     Value: "0"

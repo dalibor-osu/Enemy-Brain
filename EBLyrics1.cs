@@ -31,10 +31,13 @@ namespace StorybrewScripts
                         index++;
                         continue;
                     }
+                    string letterString = letter.ToString();
+
+                    if (letter == ',') letterString = "comma";
 
                     letters.Add(
                         layer.CreateSprite(
-                            "sb/letters/" + char.ToLower(letter) + (char.IsLower(letter) ? "" : "_c") + ".png", 
+                            "sb/letters/" + letterString.ToLower() + (char.IsLower(letter) ? "" : "_c") + ".png", 
                             OsbOrigin.Centre,
                             new Vector2(initialPos.X + offset * index, initialPos.Y)));
                     
