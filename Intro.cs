@@ -30,7 +30,7 @@ namespace StorybrewScripts
 		    string foxStr = "Fox Stevenson";
             string ebStr = "Enemy Brain Entertainment Suite EP";
             string beatmap = "Beatmap by";
-            string mappers = "Dalibor, CutoNaito, Slifer, Kyairie";
+            string mappers = "Dalibor, CutoNaito, Slifer, Kyairie, Xizis";
             string hitsounds = "Hitsounds by";
             string hitsounder = "Baack";
             
@@ -38,10 +38,10 @@ namespace StorybrewScripts
             DrawLine(GenerateLine(ebStr, 260), 3155, 5248);
 
             DrawInfo(GenerateLine(beatmap, 220 - 55), 5946, 10132);
-            DrawInfo(GenerateLine(mappers, 260 - 55), 6644, 10132);
+            DrawInfo(GenerateLine(mappers, 260 - 55, true), 6644, 10132, 0.3f);
 
             DrawInfo(GenerateLine(hitsounds, 220 + 55), 8039, 10132);
-            DrawInfo(GenerateLine(hitsounder, 260 + 55), 8737, 10132);
+            DrawInfo(GenerateLine(hitsounder, 260 + 55, true), 8737, 10132, 0.3f);
 
             var logo = layer.CreateSprite("sb/logo.png");
             logo.Color(17, Color4.Black);
@@ -69,6 +69,24 @@ namespace StorybrewScripts
             }
         }
 
+        private void DrawInfo(List<OsbSprite> letters, int startTime, int endTime, float customScale)
+        {
+            int timeOffset = 35;
+            
+            for (int i = 0; i < letters.Count; i++)
+            {
+                OsbSprite letter = letters[i];
+
+                letter.Fade(startTime + timeOffset * i, startTime + timeOffset * i + beatDuration, 0, 1);
+                letter.Fade(startTime + timeOffset * i + beatDuration, endTime, 1, 1);
+                letter.Fade(endTime, endTime + beatDuration * 2, 1, 0);
+
+                letter.Scale(startTime + timeOffset * i, ScreenScale * customScale);
+
+                letter.Color(startTime + timeOffset * i, Color);                
+            }
+        }
+
         private void DrawLine(List<OsbSprite> letters, int startTime, int endTime)
         {
             int timeOffset = 35;
@@ -87,8 +105,10 @@ namespace StorybrewScripts
             }
         }
 
-        private List<OsbSprite> GenerateLine(string line, float yOffest)
+        private List<OsbSprite> GenerateLine(string line, float yOffest, bool mappers = false)
         {
+            float originalOffset = offset;
+            if (mappers) offset = 11f;
             List<OsbSprite> letters = new List<OsbSprite>();
             int letterCount = line.Length;
             Vector2 initialPos = new Vector2(GetInitialX(letterCount, offset), yOffest);
@@ -114,6 +134,7 @@ namespace StorybrewScripts
                 index++;
             }
 
+            offset = originalOffset;
             return letters;
         }
 

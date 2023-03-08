@@ -14,8 +14,10 @@ namespace StorybrewScripts
 {
     public class EBLogo1 : Logo
     {
-        private int[] hardBeatTimes = { 56527, 57051, 57225, 61062, 64551, 64899, 65248, 65597, 65946, 66295, 66644, 72225, 75713,
-                                        76062, 76411, 76934, 76673 };
+        private int firstStartTime = 56178;
+
+        private int[] hardBeatTimes = { };
+        private int[] pauseTimes = { };
         double beatDuration;
         double hardScale = 1.05;	
 
@@ -23,13 +25,35 @@ namespace StorybrewScripts
         {
             base.Generate();
 
+            if (HardBeatTimes != "")
+            {
+                string[] hardbeatTimesStr = HardBeatTimes.Split(',');
+                hardBeatTimes = new int[hardbeatTimesStr.Length];
+
+                for (int i = 0; i < hardbeatTimesStr.Length; i++)
+                {
+                    hardBeatTimes[i] = int.Parse(hardbeatTimesStr[i].Trim());
+                }
+            }
+
+            if (StopAnimationTimes != "")
+            {
+                string[] stopAnimationTimesStr = StopAnimationTimes.Split(',');
+                pauseTimes = new int[stopAnimationTimesStr.Length];
+
+                for (int i = 0; i < stopAnimationTimesStr.Length; i++)
+                {
+                    pauseTimes[i] = int.Parse(stopAnimationTimesStr[i].Trim());
+                }
+            }
+            
             beatDuration = GetBeatDuration(Beatmap, StartTime);
 
             logo.Fade(StartTime, EndTime - beatDuration * 3, 1, 1);
             logo.Scale(OsbEasing.OutBack, StartTime, StartTime + GetBeatDuration(Beatmap, StartTime), 0, ScreenScale * scale);
             logo.RandomMovement(StartTime, EndTime, beatDuration * 4, new Vector2(10, 10), ScreenMiddle, OsbEasing.InOutSine);
 
-            DnBBeat(logo, 57574, 75713, new []{64551, 65946});
+            DnBBeat(logo, 57574 - firstStartTime + StartTime, 75713 - firstStartTime + StartTime, pauseTimes);
 
 
             foreach (var time in hardBeatTimes)

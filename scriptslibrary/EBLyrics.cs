@@ -41,13 +41,13 @@ namespace StorybrewScripts
             for (int i = 0; i < linesText.Length; i++)
             {
                 if (!linesText[i].Contains('#')) continue;
-
+                Log(linesText[i]);
                 string[] props = linesText[i].Split('#');
                 if (props.Length < 2) continue;
 
                 string text = props[0];
-                int startTime = int.Parse(props[1]);
-                int endTime = props.Length == 3 ? int.Parse(props[2]) : int.Parse(linesText[i + 1].Split('#')[1]);
+                int startTime = int.Parse(props[1].Trim());
+                int endTime = props.Length == 3 ? int.Parse(props[2]) : int.Parse(linesText[i + 1].Split('#')[1].Trim());
 
                 lines.Add(new Line(text, startTime, endTime));
             }

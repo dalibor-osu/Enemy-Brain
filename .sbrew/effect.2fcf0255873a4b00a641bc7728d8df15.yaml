@@ -12,6 +12,14 @@ Config:
     Type: "System.Int32"
     Value: "78504"
     DisplayName: "End Time"
+  StopAnimationTimes:
+    Type: "System.String"
+    Value: "64551, 65946, 75713"
+    DisplayName: "Stop Animation Times"
+  HardBeatTimes:
+    Type: "System.String"
+    Value: "56527, 57051, 57225, 61062, 64551, 64899, 65248, 65597, 65946, 66295, 66644, 72225, 75713, 76062, 76411, 76934, 76673"
+    DisplayName: "Hard Beat Times"
   SpritePath:
     Type: "System.String"
     Value: "sb/logo.png"

@@ -1,24 +1,24 @@
 ﻿FormatVersion: 7
-Name: "FTTLogo 1"
-Script: "FTTLogo"
+Name: "EBLogo1 2"
+Script: "EBLogo1"
 Multithreaded: No
 Config:
   StartTime:
     Type: "System.Int32"
-    Value: "287664"
+    Value: "123155"
     DisplayName: "Start Time"
     BeginsGroup: "Timing"
   EndTime:
     Type: "System.Int32"
-    Value: "0"
+    Value: "145481"
     DisplayName: "End Time"
   StopAnimationTimes:
     Type: "System.String"
-    Value: ""
+    Value: "131528, 132923, 139900, 141295"
     DisplayName: "Stop Animation Times"
   HardBeatTimes:
     Type: "System.String"
-    Value: ""
+    Value: "123504, 124027, 124202, 128039, 131527, 131876, 132225, 132574, 132923, 133271, 133620, 139202, 139899, 140248, 140601, 141120, 141295, 141644, 141992, 142516, 142690, 143039, 143388, 143737"
     DisplayName: "Hard Beat Times"
   SpritePath:
     Type: "System.String"
@@ -27,14 +27,14 @@ Config:
     BeginsGroup: "Other"
   Color:
     Type: "OpenTK.Graphics.Color4"
-    Value: "0.506857,0.8439482,0,1"
+    Value: "0.9607843,0.3254902,0.1411765,1"
   RandomSeed:
     Type: "System.Int32"
-    Value: "0"
+    Value: "131527"
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  a7aa927faf6546a88b2e6a3f3918ec2d:
+  ec38f73b769f4efd9bbc70d3097a6e6e:
     Name: "Logo"
     OsbLayer: Background
     DiffSpecific: No

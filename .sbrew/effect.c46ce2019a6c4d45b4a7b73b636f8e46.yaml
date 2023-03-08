@@ -5,7 +5,7 @@ Multithreaded: No
 Config:
   Song:
     Type: "System.String"
-    Value: "Enemy Brain"
+    Value: "EnemyBrain"
     BeginsGroup: "Other"
   Color:
     Type: "OpenTK.Graphics.Color4"
@@ -16,8 +16,8 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  32e7986912084fac906064db8c8039ae:
-    Name: "Lyrics: Enemy Brain"
+  f4297c9560624f1bbdc5733dd4d0b143:
+    Name: "Lyrics: EnemyBrain"
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

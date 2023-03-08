@@ -18,6 +18,8 @@ namespace StorybrewScripts
         [Group("Timing")]
         [Configurable] public int StartTime = 0;
         [Configurable] public int EndTime = 0;
+        [Configurable] public string StopAnimationTimes = "";
+        [Configurable] public string HardBeatTimes = "";
 
         [Group("Other")]
         [Configurable] public string SpritePath = "sb/logo.png";
