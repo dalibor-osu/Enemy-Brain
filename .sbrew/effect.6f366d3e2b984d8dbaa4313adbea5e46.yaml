@@ -1,6 +1,6 @@
 ﻿FormatVersion: 7
-Name: "FFTFog 1"
-Script: "FFTFog"
+Name: "Fox 1"
+Script: "Fox"
 Multithreaded: No
 Config:
   RandomSeed:
@@ -9,8 +9,8 @@ Config:
     DisplayName: "Random Seed"
     BeginsGroup: "Common"
 Layers:
-  58d6a07ae70041d3b36ac00a8649f1c3:
-    Name: "FFT Fog"
+  db514dd7515147b596a96075ff249f4b:
+    Name: "Fox"
     OsbLayer: Background
     DiffSpecific: No
-    Visible: No
+    Visible: Yes

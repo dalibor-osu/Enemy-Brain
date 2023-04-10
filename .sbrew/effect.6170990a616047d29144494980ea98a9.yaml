@@ -38,4 +38,4 @@ Layers:
     Name: "Logo"
     OsbLayer: Background
     DiffSpecific: No
-    Visible: Yes
+    Visible: No

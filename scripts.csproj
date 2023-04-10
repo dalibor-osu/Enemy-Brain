@@ -57,7 +57,9 @@
     <Compile Include="EBLogo1.cs" />
     <Compile Include="EBLyrics1.cs" />
     <Compile Include="EBSpecialLyrics.cs" />
+    <Compile Include="Ending.cs" />
     <Compile Include="FFTFog.cs" />
+    <Compile Include="Fox.cs" />
     <Compile Include="Frame.cs" />
     <Compile Include="FTTLogo.cs" />
     <Compile Include="Intro.cs" />

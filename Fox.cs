@@ -12,15 +12,15 @@ using System.Linq;
 
 namespace StorybrewScripts
 {
-    public class WhiteBG : StoryboardObjectGeneratorExtended
+    public class Fox : StoryboardObjectGeneratorExtended
     {
         public override void Generate()
         {
-		    var layer = GetLayer("WhiteBG");
-            var sprite = layer.CreateSprite("sb/pixel.png");
-            sprite.ScaleVec(1729231, ScreenScale * 1100, ScreenScale * 600);
-            sprite.Fade(OsbEasing.In, 1729231, 1733102, 0, 1);
-            sprite.Fade(1733102, 1783424, 1, 1);
+		    var layer = GetLayer("Fox");
+            var fox = layer.CreateSprite("sb/fox.png");
+
+            fox.Fade(0, 1788423, 1, 1);
+            fox.Scale(0, ScreenScale * 0.85);
             
         }
     }

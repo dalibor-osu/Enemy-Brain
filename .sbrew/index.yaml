@@ -3,6 +3,7 @@ BeatmapId: 0
 BeatmapName: "Marathon"
 Assemblies:
 Layers:
+  - "db514dd7515147b596a96075ff249f4b"
   - "8d94f246e5aa4dc4bbde0e10c5b22473"
   - "7dee9a0a25cb40e6a4f4fb060ef3e7d9"
   - "58d6a07ae70041d3b36ac00a8649f1c3"
@@ -15,6 +16,7 @@ Layers:
   - "5cd79b6b9ace443fb51085072bf3b5a4"
   - "ec38f73b769f4efd9bbc70d3097a6e6e"
   - "f4297c9560624f1bbdc5733dd4d0b143"
+  - "d0ff88d8a763449e853d1d670b1ac754"
   - "0d1bcfc2ef9842e580cc41a93594cd20"
   - "11205dcb88084f70af30b6127c99df49"
   - "c4ef81d8b1c4457fb05d656f67e840bb"

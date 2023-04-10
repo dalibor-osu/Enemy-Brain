@@ -28,6 +28,9 @@ namespace StorybrewScripts
             black.ScaleVec(-500, 1920 * ScreenScale, 1080 * ScreenScale);
             black.Fade(-500, 365, 1, 1);
             black.Fade(365, 1760, 1, 0);
+            black.Fade(1779553, 1783424, 0, 1);
+            black.Fade(1783424, 1788423 + 1000, 1, 1);
+
 
             white.ScaleVec(whiteFlashTimes[0], 1920 * ScreenScale, 1080 * ScreenScale);
 

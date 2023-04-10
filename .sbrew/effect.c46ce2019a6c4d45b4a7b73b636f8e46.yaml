@@ -20,4 +20,4 @@ Layers:
     Name: "Lyrics: EnemyBrain"
     OsbLayer: Background
     DiffSpecific: No
-    Visible: Yes
+    Visible: No
